@@ -15,9 +15,14 @@ namespace Deliverable1
             Console.WriteLine("An exclamation point: !\n");
 
             string userPassword = Console.ReadLine();
-            
-            //debug test below - to be removed after testing
+
+            //debug tests below - to be removed after testing
             //Console.WriteLine(userPassword);
+            //Console.WriteLine(userPassword.Any(char.IsUpper));
+            //Console.WriteLine(userPassword.Any(char.IsLower));
+            //Console.WriteLine(userPassword.Length >= 7);
+            //Console.WriteLine(userPassword.Length <= 12);
+            //Console.WriteLine(userPassword.Contains("!"));
 
             if (userPassword.Any(char.IsUpper) && userPassword.Any(char.IsLower)
                 && userPassword.Length>=7 && userPassword.Length<=12
